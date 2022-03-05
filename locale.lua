@@ -7,8 +7,8 @@ Locale.EN = {
 }
 Locale.DE = {
     usage = "Benutze ~INPUT_CELLPHONE_UP~ um nach oben zu fahren. ~INPUT_CELLPHONE_DOWN~ um nach unten zu fahren",
-    topfloor = "~r~Du bist bereits auf der hösten Etage~s~",
-    bottomfloor = "~r~Du bist bereits auf der niedrigsten Etage~s~"
+    topfloor = "~r~Du befindest dich bereits ganz oben~s~",
+    bottomfloor = "~r~Du befindest dich bereits ganz unten~s~"
 }
 
 --[[

@@ -8,5 +8,5 @@ version '1.0.0'
 client_scripts {
     'config.lua',
     'locale.lua',
-    'client.lua'
+    'client/client.lua'
 }
