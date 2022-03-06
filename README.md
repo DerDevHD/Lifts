@@ -1,6 +1,8 @@
 # Lifts
 A fivem script resource which allows you to add lifts/elevators to your server. No ESX is required.
 
+<img src="https://img.icons8.com/ios-filled/100/000000/elevator-doors.png"/>
+
 # Setup
 The setup is quite easy. 
 1. Downlaod the [latest release](https://github.com/DerDevHD/Lifts/releases/latest)
