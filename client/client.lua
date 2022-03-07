@@ -2,6 +2,7 @@ local MessageTable
 local Timeout
 local LiftList
 local IndexList
+local Size, Color
 local Ped
 local UseLift = function(lift, direction)
     local targetPos
@@ -44,6 +45,7 @@ if #Config.Lifts > 0 then
         end
     end
 end
+Size, Color = Config.MarkerSize, Config.MarkerColor
 
 -- main loop
 CreateThread(function()
@@ -60,7 +62,7 @@ CreateThread(function()
         for i, pos in pairs(LiftList) do
             distance = #(pos - playerCoords)
             if distance <= 30 then
-                DrawMarker(20, pos.x, pos.y, pos.z - 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.6, 0.6, 0.6, 180, 180, 180, 128, false, true, 2, nil, nil, false)
+                DrawMarker(20, pos.x, pos.y, pos.z - 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, Size, Size, Size, Color.R, Color.G, Color.B, Color.A, false, true, 2, nil, nil, false)
             end
             if distance <= 0.8 then
                 if Timeout == 0 then
