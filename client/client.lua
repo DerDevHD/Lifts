@@ -53,7 +53,7 @@ CreateThread(function()
         return
     end
     while true do
-        Wait(1)
+        local sleep = 500
         Ped = PlayerPedId()
 
         local playerCoords = GetEntityCoords(Ped)
@@ -62,9 +62,11 @@ CreateThread(function()
         for i, pos in pairs(LiftList) do
             distance = #(pos - playerCoords)
             if distance <= 30 then
+                sleep = 0
                 DrawMarker(20, pos.x, pos.y, pos.z - 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, Size, Size, Size, Color.R, Color.G, Color.B, Color.A, false, true, 2, nil, nil, false)
             end
             if distance <= 0.8 then
+                sleep = 0
                 if Timeout == 0 then
                     DisplayHelp(MessageTable.usage)
                 end
@@ -97,6 +99,7 @@ CreateThread(function()
                 end
             end
         end
+        Wait(sleep)
     end
 end)
 
